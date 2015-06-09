@@ -1,0 +1,361 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.assignment2.com/ontologies/assignment2.owl#"
+     xml:base="http://www.assignment2.com/ontologies/assignment2.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.assignment2.com/ontologies/assignment2.owl">
+        <rdfs:comment>&quot;This is asignment 2. I used the dataset with a wrist-worn accelerometer. 
+The taxonomy has a root class of a volunteer. 
+The volunteer has three sublclasses : 
+1. Gender 
+2. ID
+3. Human Activities
+
+The accelerometer measured the data for 14 human activies. These are seen in the ontology pane.&quot;</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.assignment2.com/ontologies/assignment2.owl#hasGender -->
+
+    <owl:ObjectProperty rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#hasGender"/>
+    
+
+
+    <!-- http://www.assignment2.com/ontologies/assignment2.owl#hasHumanActivities -->
+
+    <owl:ObjectProperty rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#hasHumanActivities"/>
+    
+
+
+    <!-- http://www.assignment2.com/ontologies/assignment2.owl#hasID -->
+
+    <owl:ObjectProperty rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#hasID"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.assignment2.com/ontologies/assignment2.owl#Bed -->
+
+    <owl:Class rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#Bed">
+        <rdfs:subClassOf rdf:resource="http://www.assignment2.com/ontologies/assignment2.owl#HumanActivities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.assignment2.com/ontologies/assignment2.owl#BrushTeeth -->
+
+    <owl:Class rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#BrushTeeth">
+        <rdfs:subClassOf rdf:resource="http://www.assignment2.com/ontologies/assignment2.owl#HumanActivities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.assignment2.com/ontologies/assignment2.owl#Chair -->
+
+    <owl:Class rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#Chair">
+        <rdfs:subClassOf rdf:resource="http://www.assignment2.com/ontologies/assignment2.owl#HumanActivities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.assignment2.com/ontologies/assignment2.owl#ClimbStairs -->
+
+    <owl:Class rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#ClimbStairs">
+        <rdfs:subClassOf rdf:resource="http://www.assignment2.com/ontologies/assignment2.owl#Stairs"/>
+        <owl:disjointWith rdf:resource="http://www.assignment2.com/ontologies/assignment2.owl#DescendStairs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.assignment2.com/ontologies/assignment2.owl#CombHair -->
+
+    <owl:Class rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#CombHair">
+        <rdfs:subClassOf rdf:resource="http://www.assignment2.com/ontologies/assignment2.owl#HumanActivities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.assignment2.com/ontologies/assignment2.owl#DescendStairs -->
+
+    <owl:Class rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#DescendStairs">
+        <rdfs:subClassOf rdf:resource="http://www.assignment2.com/ontologies/assignment2.owl#Stairs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.assignment2.com/ontologies/assignment2.owl#DrinkGlass -->
+
+    <owl:Class rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#DrinkGlass">
+        <rdfs:subClassOf rdf:resource="http://www.assignment2.com/ontologies/assignment2.owl#HumanActivities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.assignment2.com/ontologies/assignment2.owl#Eat -->
+
+    <owl:Class rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#Eat">
+        <rdfs:subClassOf rdf:resource="http://www.assignment2.com/ontologies/assignment2.owl#HumanActivities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.assignment2.com/ontologies/assignment2.owl#EatMeat -->
+
+    <owl:Class rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#EatMeat">
+        <rdfs:subClassOf rdf:resource="http://www.assignment2.com/ontologies/assignment2.owl#Eat"/>
+        <owl:disjointWith rdf:resource="http://www.assignment2.com/ontologies/assignment2.owl#EatSoup"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.assignment2.com/ontologies/assignment2.owl#EatSoup -->
+
+    <owl:Class rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#EatSoup">
+        <rdfs:subClassOf rdf:resource="http://www.assignment2.com/ontologies/assignment2.owl#Eat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.assignment2.com/ontologies/assignment2.owl#Female -->
+
+    <owl:Class rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#Female">
+        <rdfs:subClassOf rdf:resource="http://www.assignment2.com/ontologies/assignment2.owl#Gender"/>
+        <owl:disjointWith rdf:resource="http://www.assignment2.com/ontologies/assignment2.owl#Male"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.assignment2.com/ontologies/assignment2.owl#Gender -->
+
+    <owl:Class rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#Gender">
+        <rdfs:subClassOf rdf:resource="http://www.assignment2.com/ontologies/assignment2.owl#Volunteer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.assignment2.com/ontologies/assignment2.owl#GetUpBed -->
+
+    <owl:Class rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#GetUpBed">
+        <rdfs:subClassOf rdf:resource="http://www.assignment2.com/ontologies/assignment2.owl#Bed"/>
+        <owl:disjointWith rdf:resource="http://www.assignment2.com/ontologies/assignment2.owl#LieDownBed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.assignment2.com/ontologies/assignment2.owl#GetUpChair -->
+
+    <owl:Class rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#GetUpChair">
+        <rdfs:subClassOf rdf:resource="http://www.assignment2.com/ontologies/assignment2.owl#Chair"/>
+        <owl:disjointWith rdf:resource="http://www.assignment2.com/ontologies/assignment2.owl#SitDownChair"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.assignment2.com/ontologies/assignment2.owl#HumanActivities -->
+
+    <owl:Class rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#HumanActivities">
+        <rdfs:subClassOf rdf:resource="http://www.assignment2.com/ontologies/assignment2.owl#Volunteer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.assignment2.com/ontologies/assignment2.owl#ID -->
+
+    <owl:Class rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#ID">
+        <rdfs:subClassOf rdf:resource="http://www.assignment2.com/ontologies/assignment2.owl#Volunteer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.assignment2.com/ontologies/assignment2.owl#LieDownBed -->
+
+    <owl:Class rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#LieDownBed">
+        <rdfs:subClassOf rdf:resource="http://www.assignment2.com/ontologies/assignment2.owl#Bed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.assignment2.com/ontologies/assignment2.owl#Male -->
+
+    <owl:Class rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#Male">
+        <rdfs:subClassOf rdf:resource="http://www.assignment2.com/ontologies/assignment2.owl#Gender"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.assignment2.com/ontologies/assignment2.owl#PourWater -->
+
+    <owl:Class rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#PourWater">
+        <rdfs:subClassOf rdf:resource="http://www.assignment2.com/ontologies/assignment2.owl#HumanActivities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.assignment2.com/ontologies/assignment2.owl#SitDownChair -->
+
+    <owl:Class rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#SitDownChair">
+        <rdfs:subClassOf rdf:resource="http://www.assignment2.com/ontologies/assignment2.owl#Chair"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.assignment2.com/ontologies/assignment2.owl#Stairs -->
+
+    <owl:Class rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#Stairs">
+        <rdfs:subClassOf rdf:resource="http://www.assignment2.com/ontologies/assignment2.owl#HumanActivities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.assignment2.com/ontologies/assignment2.owl#UseTelephone -->
+
+    <owl:Class rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#UseTelephone">
+        <rdfs:subClassOf rdf:resource="http://www.assignment2.com/ontologies/assignment2.owl#HumanActivities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.assignment2.com/ontologies/assignment2.owl#Volunteer -->
+
+    <owl:Class rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#Volunteer"/>
+    
+
+
+    <!-- http://www.assignment2.com/ontologies/assignment2.owl#Walk -->
+
+    <owl:Class rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#Walk">
+        <rdfs:subClassOf rdf:resource="http://www.assignment2.com/ontologies/assignment2.owl#HumanActivities"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.assignment2.com/ontologies/assignment2.owl#F1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#F1">
+        <rdf:type rdf:resource="http://www.assignment2.com/ontologies/assignment2.owl#Volunteer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.assignment2.com/ontologies/assignment2.owl#F2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#F2">
+        <rdf:type rdf:resource="http://www.assignment2.com/ontologies/assignment2.owl#Volunteer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.assignment2.com/ontologies/assignment2.owl#F3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#F3">
+        <rdf:type rdf:resource="http://www.assignment2.com/ontologies/assignment2.owl#Volunteer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.assignment2.com/ontologies/assignment2.owl#M1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#M1">
+        <rdf:type rdf:resource="http://www.assignment2.com/ontologies/assignment2.owl#Volunteer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.assignment2.com/ontologies/assignment2.owl#M2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#M2">
+        <rdf:type rdf:resource="http://www.assignment2.com/ontologies/assignment2.owl#Volunteer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.assignment2.com/ontologies/assignment2.owl#M3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#M3">
+        <rdf:type rdf:resource="http://www.assignment2.com/ontologies/assignment2.owl#Volunteer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#Bed"/>
+            <rdf:Description rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#BrushTeeth"/>
+            <rdf:Description rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#Chair"/>
+            <rdf:Description rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#CombHair"/>
+            <rdf:Description rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#DrinkGlass"/>
+            <rdf:Description rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#Eat"/>
+            <rdf:Description rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#PourWater"/>
+            <rdf:Description rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#Stairs"/>
+            <rdf:Description rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#UseTelephone"/>
+            <rdf:Description rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#Walk"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#Gender"/>
+            <rdf:Description rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#HumanActivities"/>
+            <rdf:Description rdf:about="http://www.assignment2.com/ontologies/assignment2.owl#ID"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
