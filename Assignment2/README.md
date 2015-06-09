@@ -1,0 +1,1 @@
+This is my assignment 2. I created a taxonomy for the volunteer using the wrist-worn acceloremeter. In addition I created 6 instances but as specified by the assignment description did not bother with the object properties to really connect the instances to the classes. However, I did create three object properties just as a trial.
