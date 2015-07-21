@@ -7,9 +7,9 @@ The problem this application solves is that it provides the site and weather inf
 
 To demonstrate the functionality of this application I have also included a .pdf file with screenshots of my input and output. I retrieved the following site information:
 
-                            1. Station Name
-                            2. Country Code
-                            3. Latitude & Longtitude Coordinates
+                      1. Station Name
+                      2. Country Code
+                      3. Latitude & Longtitude Coordinates
 
 In addition the following weather information was retrieved:
  
