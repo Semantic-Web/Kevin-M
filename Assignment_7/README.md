@@ -1,6 +1,7 @@
 This is my assignment 7 on GeoNames.
 
 ***** OVERVIEW *****
+        
 For this assignment I wanted to find the current weather information for certain locations found within the GeoNames databases. In order achieve this java was used. I used the Eclipse IDE for the code development. The GeoNames JAVA CLIENT was used in order to query the GeoNames databases and retrieve the wanted information.
 
 The problem this application solves is that it provides the site and weather information availble from the GeoNames database for a given International Civil Aviation Organization(ICAO). ICAO codes are 4 digit codes. 
@@ -23,6 +24,7 @@ In addition the following weather information was retrieved:
 The information above was found for 9 ICAO sites. They were all airports. Therefore, ICAO airport codes were used. From the 9 sites used 5 were US sites and 4 were international sites.
 
 ***** INSTRUCTIONS TO RUN THE APPLICATION *****
+      
 In order to run the application the following steps need to be performed before running the application:
 
                         1. Create a username from the following link http://www.geonames.org/login
